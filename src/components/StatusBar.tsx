@@ -1,4 +1,4 @@
-import { SignalHigh } from "lucide-react";
+import { Radio } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const StatusBar = () => {
@@ -19,12 +19,12 @@ const StatusBar = () => {
   }, []);
 
   return (
-    <header className="flex justify-between items-center text-white px-4 py-2 z-20 rounded-t-3xl fixed top-8 w-full max-w-72 mix-blend-screen pointer-events-none bg-transparent">
-      <div className="flex items-center space-x-1">
-        <SignalHigh size={24} />
+    <header className="flex justify-between items-cente px-4 pt-2.5 pb-1 z-50 rounded-t-3xl fixed top-8 w-full max-w-72 pointer-events-none bg-transparent border border-transparent">
+      <div className="flex items-center  mix-blend-difference">
+        <Radio size={26} strokeWidth={1.3} />
       </div>
       <span className="size-3.5 rounded-full border-gray-800 border bg-gradient-to-b from-black to-gray-800"/>
-      <span className="font-light">{time}</span>
+      <span className="font-light mix-blend-difference">{time}</span>
     </header>
   );
 };

@@ -5,7 +5,7 @@ import Dock from "./components/Dock";
 const HomeScreen = () => {
   return (
     <>
-      <div className="appears bg-[url('https://papers.co/wallpaper/papers.co-vs45-texture-window-light-pattern-41-iphone-wallpaper.jpg')] h-full w-full rounded-3xl -z-10 bg-cover bg-no-repeat" />
+      <div className="appears bg-[url('https://w.wallhaven.cc/full/6k/wallhaven-6k3zql.jpg')] h-full w-full rounded-3xl -z-10 bg-cover bg-no-repeat" />
       <StatusBar />
       <Greeting />
       <Dock />

@@ -39,10 +39,7 @@ const Skills = () => {
       <article>
         <h1 className="text-2xl font-semibold mb-2">Skills</h1>
         <p className="text-sm text-pretty">
-          In my professional and personal career, I have worked with different
-          programming languages, frameworks and various tools that I have
-          learned for a specific purpose and that have helped me grow as a
-          multifaceted professional.
+          I have worked with different programming languages, frameworks and various tools that have helped me grow as a multifaceted professional.
         </p>
       </article>
       <hr className="my-5 opacity-10" />
@@ -57,7 +54,9 @@ const Skills = () => {
             key={index}
             className="skill-item flex flex-col items-center transition-transform hover:scale-110"
           >
-            <i className={`${item.icon} text-3xl fadeAndScale cursor-pointer`}></i>
+            <i
+              className={`${item.icon} text-3xl fadeAndScale cursor-pointer`}
+            ></i>
             <p className="text-center mt-2 text-sm font-normal">{item.skill}</p>
           </div>
         ))}
@@ -70,7 +69,9 @@ const Skills = () => {
             key={index}
             className="skill-item flex flex-col items-center transition-transform hover:scale-110"
           >
-            <i className={`${item.icon} text-3xl fadeAndScale cursor-pointer`}></i>
+            <i
+              className={`${item.icon} text-3xl fadeAndScale cursor-pointer`}
+            ></i>
             <p className="text-center mt-2 text-sm font-normal">{item.skill}</p>
           </div>
         ))}
@@ -86,7 +87,9 @@ const Skills = () => {
             key={index}
             className="skill-item flex flex-col items-center transition-transform hover:scale-110"
           >
-            <i className={`${item.icon} text-3xl fadeAndScale cursor-pointer`}></i>
+            <i
+              className={`${item.icon} text-3xl fadeAndScale cursor-pointer`}
+            ></i>
             <p className="text-center mt-2 text-sm font-normal">{item.skill}</p>
           </div>
         ))}
@@ -99,7 +102,9 @@ const Skills = () => {
             key={index}
             className="skill-item flex flex-col items-center transition-transform hover:scale-110"
           >
-            <i className={`${item.icon} text-3xl fadeAndScale cursor-pointer`}></i>
+            <i
+              className={`${item.icon} text-3xl fadeAndScale cursor-pointer`}
+            ></i>
             <p className="text-center mt-2 text-sm font-normal">{item.skill}</p>
           </div>
         ))}
