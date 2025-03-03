@@ -7,7 +7,7 @@ const Phone = () => {
     <>
     <div className="w-full h-dvh  bg-gradient-to-tr from-blue-500 via-blue-300 to-blue-800 flex items-center justify-center">
       <figure className="absolute bg-repeat h-dvh w-dvw bg-[url('https://transparenttextures.com/patterns/3px-tile.png')] opacity-30"/>
-      <div className="h-[90dvh] bg-neutral-100 min-w-72 w-72 rounded-3xl z-10 relative overflow-auto">
+      <div className="h-[90dvh] bg-neutral-100 min-w-72 w-72 rounded-3xl z-10 relative overflow-auto appears">
         <StatusBar />
         <Outlet />
         <ScreenIndicator />

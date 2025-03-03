@@ -12,13 +12,13 @@ type Work = {
   
   function getRandomTailwindColor() {
     const colors = [
-      "bg-red-500/10 text-red-600 border-red-600",
-      "bg-blue-500/10 text-blue-600 border-blue-600",
-      "bg-green-500/10 text-green-600 border-green-600",
-      "bg-yellow-500/10 text-yellow-600 border-yellow-600",
-      "bg-indigo-500/10 text-indigo-600 border-indigo-600",
-      "bg-purple-500/10 text-purple-600 border-purple-600",
-      "bg-pink-500/10 text-pink-600 border-pink-600",
+      "bg-red-500/5 text-red-400 border-red-400",
+      "bg-blue-500/5 text-blue-400 border-blue-400",
+      "bg-green-500/5 text-green-400 border-green-400",
+      "bg-yellow-500/5 text-yellow-400 border-yellow-400",
+      "bg-indigo-500/5 text-indigo-400 border-indigo-400",
+      "bg-purple-500/5 text-purple-400 border-purple-400",
+      "bg-pink-500/5 text-pink-400 border-pink-400",
     ];
     return colors[Math.floor(Math.random() * colors.length)];
   }

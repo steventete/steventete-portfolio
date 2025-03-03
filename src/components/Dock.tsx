@@ -31,7 +31,7 @@ const icons = [
   {
     name: "User",
     icon: User,
-    route: "/",
+    route: "/me",
   },
 ];
 

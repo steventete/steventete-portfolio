@@ -1,6 +1,5 @@
+import BackButton from "../components/BackButton";
 import Card from "../components/works/Card";
-import { Link } from "react-router-dom";
-import { Home } from "lucide-react";
 
 const works = [
   {
@@ -51,22 +50,17 @@ const works = [
 const Works = () => {
   return (
     <>
-    <div className="appears mx-2 pb-8">
+    <div className="appears mx-2">
         <div className="w-full flex justify-center">
             <section className="w-11/12">
-            <h1 className="text-2xl font-semibold mt-12">Works</h1>
+            <h1 className="text-4xl font-semibold mt-12 text-gray-800">My Works</h1>
             </section>
         </div>
     
         {works.map((work, index) => (
             <Card key={index} work={work} />
         ))}
-              <Link
-        to={"/home"}
-        className="flex justify-center items-center w-11/12 gap-1 font-normal border border-black/20 rounded-lg p-1 transition hover:bg-black/10 mx-auto"
-      >
-        <Home size={20} strokeWidth={1.5} /> Back to home
-      </Link>
+        <BackButton />
     </div>
     </>
   );
