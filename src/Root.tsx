@@ -9,6 +9,7 @@ import Skills from './apps/Skills.tsx'
 import Contact from './apps/Contact.tsx'
 import Error from './apps/Error.tsx'
 import About from './apps/About.tsx'
+import { Analytics } from "@vercel/analytics/react"
 
 createRoot(document.getElementById('root')!).render(
 
@@ -24,5 +25,7 @@ createRoot(document.getElementById('root')!).render(
         <Route path="*" element={<Error />} />
       </Route>
     </Routes>
+    <Analytics />
   </BrowserRouter>
+
 )
