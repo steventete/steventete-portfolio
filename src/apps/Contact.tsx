@@ -1,7 +1,9 @@
-import { Send } from "lucide-react";
+import { Send, CheckCircle, XCircle } from "lucide-react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import BackButton from "../components/BackButton";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -74,8 +76,9 @@ const Contact = () => {
     setIsSending(true);
 
     const templateParams = {
-      user_name: formData.name,
-      user_email: formData.email,
+      to_name: "Steven",
+      from_name: formData.name,
+      from_email: formData.email,
       subject: formData.subject,
       message: formData.message,
     };
@@ -87,11 +90,18 @@ const Contact = () => {
         templateParams,
         "5GcaJPYeE5fDDGT2v"
       );
-      alert("Thank you for your message! I will get back to you soon.");
+
+      toast.success("Message sent successfully!", {
+        icon: <CheckCircle className="text-green-500" />,
+      });
+
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       console.error("Email send failed:", error);
-      alert("Oops! Something went wrong. Please try again later.");
+
+      toast.error("Oops! Something went wrong. Try again later.", {
+        icon: <XCircle className="text-red-500" />,
+      });
     } finally {
       setIsSending(false);
     }
@@ -99,6 +109,8 @@ const Contact = () => {
 
   return (
     <div className="appears max-w-2xl mx-auto p-6">
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
+
       <h1 className="text-4xl font-bold mb-2 mt-7 text-gray-800 dark:text-white">
         Contact Me
       </h1>
