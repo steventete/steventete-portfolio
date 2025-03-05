@@ -47,7 +47,7 @@ const experiences = [
 const Experience = () => {
   return (
     <section className="mt-12 mx-3 appears">
-      <h2 className="text-4xl font-bold mb-6 text-center text-gray-800">
+      <h2 className="text-4xl font-bold mb-6 text-gray-800">
         My Experience
       </h2>
 
