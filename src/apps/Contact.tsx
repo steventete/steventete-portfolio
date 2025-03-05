@@ -108,10 +108,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="appears max-w-2xl mx-auto p-6">
+    <div className="appears max-w-2xl mx-auto px-6 mt-12">
       <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
 
-      <h1 className="text-4xl font-bold mb-2 mt-7 text-gray-800 dark:text-white">
+      <h1 className="text-4xl font-bold mb-2 mt-0 text-gray-800 dark:text-white">
         Contact Me
       </h1>
       <p className="text-gray-600 dark:text-gray-300 mb-5">

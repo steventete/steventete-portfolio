@@ -26,7 +26,8 @@ const works = [
   {
     title: "YT Comment Scraper",
     description: "Web application to scrape comments from YouTube videos",
-    image: "https://raw.githubusercontent.com/steventete/YouTubeCommentScraper/refs/heads/main/screenshots/CommentsLoaded.png",
+    image:
+      "https://raw.githubusercontent.com/steventete/YouTubeCommentScraper/refs/heads/main/screenshots/CommentsLoaded.png",
     technologies: ["React", "TailwindCSS"],
     demo: "https://youtubecommentscraper.vercel.app",
   },
@@ -34,14 +35,16 @@ const works = [
     title: "IntegralApp",
     description:
       "Python-based GUI application to simplify the calculation of definite integrals using numerical methods.",
-    image: "https://raw.githubusercontent.com/steventete/integral-app/refs/heads/main/screenshots/graph-view.png",
+    image:
+      "https://raw.githubusercontent.com/steventete/integral-app/refs/heads/main/screenshots/graph-view.png",
     technologies: ["Python", "PyQt5"],
     demo: "https://github.com/steventete/integral-app",
   },
   {
     title: "WeatherNow",
     description: "Web application to check the weather in real time",
-    image: "https://raw.githubusercontent.com/steventete/WeatherNow/refs/heads/main/Screenshots/Main.png",
+    image:
+      "https://raw.githubusercontent.com/steventete/WeatherNow/refs/heads/main/Screenshots/Main.png",
     technologies: ["HTML", "CSS", "JS"],
     demo: "https://weathernowforecast.vercel.app",
   },
@@ -50,18 +53,20 @@ const works = [
 const Works = () => {
   return (
     <>
-    <div className="appears mx-2">
+      <div className="appears mx-2 mt-12">
         <div className="w-full flex justify-center">
-            <section className="w-11/12">
-            <h1 className="text-4xl font-semibold mt-12 text-gray-800">My Works</h1>
-            </section>
+          <section className="w-11/12">
+            <h1 className="text-4xl font-semibold mt-0 text-gray-800">
+              My Works
+            </h1>
+          </section>
         </div>
-    
+
         {works.map((work, index) => (
-            <Card key={index} work={work} />
+          <Card key={index} work={work} />
         ))}
         <BackButton />
-    </div>
+      </div>
     </>
   );
 };
